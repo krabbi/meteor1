@@ -1,0 +1,30 @@
+<template name="employeeModal">
+    <div class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h4 class="modal-title">{{employee.name}}</h4>
+                </div>
+
+                <div class="modal-body">
+                    <p class="text-center">
+                    Name: <strong>{{employee.name}}</strong><br/>
+                    Address: <strong>{{employee.address}}</strong><br/>
+                    Department: <strong>{{employee.department}}</strong><br/>
+                    Job Title: <strong>{{employee.job}}</strong><br/>
+                    Biography: <strong>{{employee.biography}}</strong><br/>
+                    Phones: <strong>{{employee.phone}}</strong><br/>
+                    Email: <strong>{{employee.email}}</strong><br/>
+                    Other contact information: <strong>{{employee.other_contact}}</strong>
+                    </p>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</template>

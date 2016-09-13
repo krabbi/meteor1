@@ -1,0 +1,33 @@
+<template name='employees'>
+    <div>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Phones</th>
+                    <th>Department</th>
+                    <th>Position</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each employees}}
+                    <tr class="employee-grid">
+                        <td>{{name}}</td>
+                        <td>{{phone}}</td>
+                        <td>{{department}}</td>
+                        <td>{{job}}</td>
+                        <th>
+                            <div class="btn-group">
+                                <a href="{{pathFor 'editEmployee' _id=this._id.valueOf}}" class="btn btn-warning">Edit</a>
+                                <button class="btn btn-danger delete">x</button>
+                            </div>
+                        </th>
+                    </tr>
+                {{/each}}
+            </tbody>
+        </table>
+
+        <a href="{{pathFor 'addEmployee'}}"><button class="btn btn-success add">Add Employee</button></a>
+    </div>
+</template>

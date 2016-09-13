@@ -20,3 +20,10 @@ ecmascript@0.5.7              # Enable ECMAScript2015+ syntax in app code
 autopublish             # Publish all data to the clients (for prototyping)
 insecure                # Allow all DB writes from clients (for prototyping)
 simple:rest
+twbs:bootstrap
+kadira:flow-router
+kadira:blaze-layout
+aldeed:autoform
+aldeed:simple-schema
+arillo:flow-router-helpers
+peppelg:bootstrap-3-modal

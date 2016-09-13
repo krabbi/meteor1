@@ -1,7 +1,12 @@
-import { Template } from 'meteor/templating';
-import { Objects } from '/lib/collections/objects.js'
+import { Employees } from '../lib/collections/employees.js'
 
+window.Employees = Employees;
+
+
+
+/*
 import './main.html';
+
 
 
 Template.hello.helpers({
@@ -16,3 +21,5 @@ Template.hello.events({
     Objects.insert({});
   }
 });
+
+*/
