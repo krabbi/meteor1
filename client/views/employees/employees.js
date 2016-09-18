@@ -1,12 +1,12 @@
 import {Employees} from '/lib/collections/employees.js'
-import {Notices} from '/lib/collections/notices.js'
+import {Notes} from '/lib/collections/notes.js'
 import {Modal} from 'meteor/peppelg:bootstrap-3-modal'
 
 Template.employees.events({
     'click .delete'(e){
-        let notices = Notices.find({employeeId: this._id.valueOf()}).fetch();
-        notices.forEach(function(notice){
-            Notices.remove(notice._id);
+        let notes = Notes.find({employeeId: this._id.valueOf()}).fetch();
+        notes.forEach(function(note){
+            Notes.remove(note._id);
         });
         Employees.remove(this._id);
     },

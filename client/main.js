@@ -1,8 +1,8 @@
 import { Employees } from '../lib/collections/employees.js'
-import {Notices} from '/lib/collections/notices.js'
+import {Notes} from '/lib/collections/notes.js'
 
 window.Employees = Employees;
-window.Notices = Notices;
+window.Notes = Notes;
 
 
 

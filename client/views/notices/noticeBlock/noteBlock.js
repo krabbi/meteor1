@@ -2,13 +2,13 @@
  * Created by dread on 19.09.16.
  */
 
-import {Notices} from '/lib/collections/notices.js'
+import {Notes} from '/lib/collections/notes.js'
 import {Employees} from '/lib/collections/employees.js'
 
 var color = 0;
 
 
-Template.noticeBlock.helpers({
+Template.noteBlock.helpers({
     employeeName(){
         let id =new Mongo.ObjectID(this.employeeId);
         return Employees.find({_id: id}).fetch()[0].name;
@@ -28,8 +28,8 @@ Template.noticeBlock.helpers({
     }
 });
 
-Template.noticeBlock.events({
+Template.noteBlock.events({
     'click .delete'(){
-        Notices.remove(this._id);
+        Notes.remove(this._id);
     }
 });
