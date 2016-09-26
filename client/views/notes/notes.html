@@ -1,0 +1,9 @@
+<template name='notes'>
+    <div>
+        {{#each notes}}
+            {{> noteBlock}}
+        {{/each}}
+
+        {{> quickForm schema = "Schems.notes" collection = "Notes" id="noce-add" type="insert"}}
+    </div>
+</template>
